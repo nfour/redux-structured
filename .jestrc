@@ -1,5 +1,6 @@
 {
   "verbose": true,
+  "setupFiles": [ "<rootDir>/src/polyfill" ],
   "transform": { ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js" },
   "testRegex": "\\.(test|spec)\\.tsx?$",
   "moduleFileExtensions": [ "ts", "tsx", "js" ],

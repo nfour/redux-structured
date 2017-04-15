@@ -16,7 +16,9 @@
     "url": "https://github.com/nfour/redux-structured"
   },
   "dependencies": {
+    "@types/core-js": "^0.9.41",
     "@types/redux": "^3.6.0",
+    "core-js": "^2.4.1",
     "redux": "^3.6.0"
   },
   "devDependencies": {
@@ -29,6 +31,6 @@
     "tslint": "^5.1.0",
     "tslint-eslint-rules": "^4.0.0",
     "types-installer": "^1.2.8",
-    "typescript": "next"
+    "typescript": "^2.2.2"
   }
 }
