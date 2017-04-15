@@ -29,6 +29,6 @@
     "tslint": "^5.1.0",
     "tslint-eslint-rules": "^4.0.0",
     "types-installer": "^1.2.8",
-    "typescript": "^2.2.2"
+    "typescript": "next"
   }
 }

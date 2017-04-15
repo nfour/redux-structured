@@ -1,1 +1,1 @@
-import * from './Struct';
+export * from './test';
