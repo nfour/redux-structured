@@ -1,0 +1,12 @@
+{
+  "verbose": true,
+  "transform": { ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js" },
+  "testRegex": "\\.(test|spec)\\.tsx?$",
+  "moduleFileExtensions": [ "ts", "tsx", "js" ],
+  "testPathIgnorePatterns": [
+    "/node_modules/",
+    "./dist"
+  ],
+  "coverageDirectory": "./.coverage"
+
+}
