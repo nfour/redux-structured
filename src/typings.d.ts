@@ -1,7 +1,36 @@
-import { Action, Reducer, ActionReducer } from './';
+import {
+  Action, Reducer, Reaction, Scaffold,
+} from './';
 
-/** TODO: fill me out */
-export type IBlock = Action | Reducer | ActionReducer;
+export {
+  Action, Reducer, Reaction, Scaffold,
+}
 
-/** TODO: fill me out */
-export interface IBlocks { [key: string]: IBlock; }
+/**
+ * Selector of actions
+ *
+ * @example
+ *
+ * actions.items(itemId).bar // actions.items[itemId].foo
+ */
+export interface IActionSelectors {
+  [key: string]: IActionSelectorNode
+}
+
+export interface ICallableActionSelector {
+  (...args: any[]): IActionSelectorNode
+}
+
+export type IActionSelectorNode = ICallableActionSelector|IActionSelectors
+
+export interface ILayoutNesting { [key: string]: ILayout }
+export type ILayout = Scaffold | ILayoutNesting;
+
+export type IActionsSelection = IActionSelectorNode | { [key: string]: IActionsSelection }
+export type IReducersSelection = Reducer | { [key: string]: Reducer }
+
+export type IReduxReducer = (state: any, action: any) => any
+export interface IReduxReducers { [key: string]: IReduxReducer; }
+
+export type IReduxAction = (...args: any[]) => any
+export interface IReduxActions { [key: string]: IReduxAction; }

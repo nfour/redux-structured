@@ -1,5 +1,5 @@
 import './polyfill'; // TODO: remove
 
-export * from './Builder';
-export * from './blocks';
-export * from './structs';
+export * from './Structure';
+export * from './interfaces';
+export * from './scaffolds';

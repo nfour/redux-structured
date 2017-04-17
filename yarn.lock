@@ -1686,6 +1686,30 @@ lru-cache@^4.0.1:
     pseudomap "^1.0.1"
     yallist "^2.0.0"
 
+lutils-clone@~0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/lutils-clone/-/lutils-clone-0.1.8.tgz#ecda6cf92bdbe29aa03c121e63e06f9d8028f72e"
+  dependencies:
+    lutils-typeof "~0.2.0"
+
+lutils-merge@~0.2.6:
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/lutils-merge/-/lutils-merge-0.2.6.tgz#bcc047fff86dc81a84a66a9b92c2e0bfc3d40334"
+  dependencies:
+    lutils-typeof "~0.2.0"
+
+lutils-typeof@~0.2.0, lutils-typeof@~0.2.4:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/lutils-typeof/-/lutils-typeof-0.2.5.tgz#459888ad8d744b77774c0ea24589a34fb56baa9d"
+
+lutils@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/lutils/-/lutils-1.2.5.tgz#37757aeaccdf68ab6a248c86cedd65b6f61e6fb0"
+  dependencies:
+    lutils-clone "~0.1.8"
+    lutils-merge "~0.2.6"
+    lutils-typeof "~0.2.4"
+
 make-error@^1.1.1:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/make-error/-/make-error-1.2.3.tgz#6c4402df732e0977ac6faf754a5074b3d2b1d19d"
@@ -2218,6 +2242,10 @@ sane@~1.5.0:
 sax@^1.2.1:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.2.tgz#fd8631a23bc7826bef5d871bdb87378c95647828"
+
+seamless-immutable@^7.1.2:
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/seamless-immutable/-/seamless-immutable-7.1.2.tgz#c87a1eba6767a32455311d76600ac5eddeafbb69"
 
 "semver@2 || 3 || 4 || 5", semver@^5.3.0:
   version "5.3.0"
