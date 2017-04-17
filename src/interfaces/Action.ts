@@ -18,12 +18,11 @@ export class Action extends Scaffold {
   constructor(input?: ILayout|IReduxAction) {
     super();
 
-    if (input) {
-      if (input instanceof Function) {
-        this.actions = input;
-      } else {
-        this.layout = input;
-      }
+    if (!(input instanceof Function)) {
+      throw new Error("Expected parameter 'input' to be Function");
     }
+
+    this.actions = input;
+
   }
 }

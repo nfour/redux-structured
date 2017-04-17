@@ -35,3 +35,19 @@ structure.actions.items(1).doStuff({
   order     : { value: 4, index: 0 },
   item      : { someRandoKey: 'wew' },
 });
+
+structure = {
+  _actions: {
+    items(key) {
+      this.__context.key = key;
+    }
+  },
+
+  get actions() {
+    const __context = {}
+    return {
+      __context,
+      ...this._actions
+    }
+  }
+}

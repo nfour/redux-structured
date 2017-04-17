@@ -6,6 +6,10 @@ export {
   Action, Reducer, Reaction, Scaffold,
 }
 
+export interface IActionCreator {
+  (): () => () => void
+}
+
 /**
  * Selector of actions
  *

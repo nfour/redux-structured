@@ -92,6 +92,14 @@ export const schema = new Schema(
           dispatch(count2.decr(decr));
         }),
 
+        newActionIdea: Action((location:string) => {
+          return (foo, bar) => {
+            return ({ dispatch, getState, action: { meta } }) => {
+
+            }
+          }
+        }),
+
       },
     )),
 
@@ -110,6 +118,7 @@ export const schema = new Schema(
 schema.reducers['items().asdsad.sds'];
 schema.actions.items().asdsad.sds.sds();
 schema.actions.items().asdsad.sds.sds();
+schema.actions.items.$merge();
 
 export const actions = schema.bindDispatchToAction(dispatch);
 
