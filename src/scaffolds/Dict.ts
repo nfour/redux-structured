@@ -51,3 +51,16 @@ export class Dict extends Scaffold implements Reaction {
  * with that state. Any non-endpoint functions invoked will merely set state at that location
  * based on their ActionSelector fn
  */
+
+/**
+ * Attack plan:
+ *
+ * TODO:
+ *
+ * - do the above, make a proff of concept with tests
+ * - impliment that into Structure
+ * - figure out a action/reducer/reaction argument strategy
+ * - wire it all up
+ * - write tests
+ * - ???
+ */
